@@ -1,0 +1,13 @@
+[package]
+name = "passvault"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "passvault"
+path = "src/main.rs"
+
+[dependencies]
+aes-gcm = "0.10.3"
+base64 = "0.22.1"
+md5 = "0.7.0"

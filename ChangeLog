@@ -1,0 +1,2 @@
+- Add the Hash of the key that generated from the --init argument
+  to prevent using other keys for new passwords
