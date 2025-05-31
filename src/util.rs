@@ -8,9 +8,9 @@ use std::path::Path;
 
 pub fn banner(version: f64) {
     println!(
-        "MyPass password manager version {} \n\
+        "PassVault password manager version {} \n\
         A simple and powerfull password manager \n\
-        \nUsage: mypass [OPTIONS...] \n\
+        \nUsage: passvault [OPTIONS...] \n\
             \
         \t-k Add the key \n\
         \t-a Add a new password \n\
@@ -37,9 +37,6 @@ pub fn banner(version: f64) {
 //  |  |- data - data file that stores things like password and etc.
 //  |  |- meta - metadata file that stores the ascii base meta data.
 //  |- TikTok/
-//  |  |- data - ~
-//  |  |- meta - ~
-//  |- Spacehey/
 //  |  |- data - ~
 //  |  |- meta - ~
 // ====================================

@@ -138,7 +138,7 @@ pub fn parse_arguments(args: &Vec<String>) -> Result<Config, String> {
             // println!("Ran out of index");
             break;
         }
-        if (args_iter_obj.len() >= 2) {
+        if args_iter_obj.len() >= 2 {
             two = true;
         } else {
             two = false;

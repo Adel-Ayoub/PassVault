@@ -164,7 +164,7 @@ pub fn validate_user_key(key: &str) -> Result<(), String> {
         }
     }
 
-    if (hashed_key != f_key) {
+    if hashed_key != f_key {
         return Err(format!(
             "Your key is not same as what you made before. please give the original key"
         ));
@@ -234,7 +234,7 @@ pub fn process_args(config: &Config) -> Result<String, String> {
                     "Please Provide your main key for encryption the password",
                 ));
             } else {
-                if (util::is_origin_exists()) {
+                if util::is_origin_exists() {
                     return Err(String::from("You already made the base key.\nPlease use the same key or make another with `psm -g`"));
                 }
                 n_key = generate_random_key();
